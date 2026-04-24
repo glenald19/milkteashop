@@ -17,7 +17,7 @@ $user_id = $_GET['id'];
 
 // Prevent deleting your own admin account
 if ($user_id == $_SESSION['admin_id']) {
-    echo "You cannot delete your own admin account!";
+    echo "You cannot delete your own admin account maam/sir!";
     exit();
 }
 
