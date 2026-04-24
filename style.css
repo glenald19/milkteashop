@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0e7e9, #e0e7e9); /* Set background to #e0e7e9 */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 900px;
+  background: #fff;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.form-section {
+  flex: 1;
+  padding: 60px 40px;
+}
+
+.welcome-section {
+  flex: 1;
+  background: #e0e7e9; /* Set background to #e0e7e9 */
+  color: #333; /* Adjusted text color for contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #e0e7e9; /* Set button background to #e0e7e9 */
+  color: #333; /* Adjusted text color for contrast */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #d0d7d9; /* A slightly darker shade of #e0e7e9 for hover effect */
+}
+
+small {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+small a {
+  color: #356371; /* Set link color to #e0e7e9 */
+  text-decoration: none;
+}
+
+small a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .welcome-section {
+    order: -1;
+    text-align: center;
+  }
+}
